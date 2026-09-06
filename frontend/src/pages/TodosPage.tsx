@@ -3,11 +3,17 @@ import { createTodo, deleteTodo, getTodos, updateTodo } from '../api/todos';
 import { PRIORITIES, type Todo, type TodoPriority } from '../types';
 import { useToast } from '../components/ToastContext';
 import { useConfirm } from '../components/ConfirmContext';
+import { dueBadge } from '../utils/due';
 
 type Filter = 'all' | 'active' | 'done';
 type SortBy = 'created' | 'due' | 'progress' | 'priority';
 
 const PRIORITY_RANK: Record<TodoPriority, number> = { HIGH: 0, MEDIUM: 1, LOW: 2 };
+
+function DueBadge({ dueDate }: { dueDate: string | null }) {
+  const badge = dueBadge(dueDate);
+  return badge ? <span className={'due-badge ' + badge.cls}>{badge.text}</span> : null;
+}
 
 export default function TodosPage() {
   const toast = useToast();
@@ -262,7 +268,12 @@ export default function TodosPage() {
                   </div>
                 </div>
 
-                {todo.dueDate && <span className="item-sub">Due {todo.dueDate}</span>}
+                {todo.dueDate && (
+                  <span className="item-sub due-line">
+                    Due {todo.dueDate}
+                    <DueBadge dueDate={todo.dueDate} />
+                  </span>
+                )}
 
                 <div className="progress-row">
                   <input

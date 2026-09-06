@@ -7,6 +7,7 @@ import ProtectedRoute from './auth/ProtectedRoute';
 import Layout from './components/Layout';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import DashboardPage from './pages/DashboardPage';
 import TodosPage from './pages/TodosPage';
 import ExpensesPage from './pages/ExpensesPage';
 import ProfilePage from './pages/ProfilePage';
@@ -25,13 +26,14 @@ export default function App() {
           {/* Everything below requires a logged-in user */}
           <Route element={<ProtectedRoute />}>
             <Route element={<Layout />}>
+              <Route path="/home" element={<DashboardPage />} />
               <Route path="/todos" element={<TodosPage />} />
               <Route path="/expenses" element={<ExpensesPage />} />
               <Route path="/profile" element={<ProfilePage />} />
             </Route>
           </Route>
 
-          <Route path="*" element={<Navigate to="/todos" replace />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
             </BrowserRouter>
           </AuthProvider>

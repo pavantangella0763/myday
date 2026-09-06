@@ -23,6 +23,19 @@ export interface Profile {
   monthlyBudget: number | null;
 }
 
+export interface DashboardData {
+  totalTodos: number;
+  activeTodos: number;
+  completedTodos: number;
+  dueToday: number;
+  overdue: number;
+  upcomingTodos: Todo[];
+  spentToday: number;
+  spentThisMonth: number;
+  monthlyBudget: number | null;
+  recentExpenses: Expense[];
+}
+
 export type ExpenseCategory = 'FOOD' | 'TRAVEL' | 'BILLS' | 'SHOPPING' | 'HEALTH' | 'OTHER';
 
 export const CATEGORIES: ExpenseCategory[] = ['FOOD', 'TRAVEL', 'BILLS', 'SHOPPING', 'HEALTH', 'OTHER'];

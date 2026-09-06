@@ -612,6 +612,171 @@ select:focus {
   cursor: not-allowed;
 }
 
+/* ===== Dashboard ===== */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.stat-tile {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.stat-tile.danger {
+  border-color: var(--danger);
+}
+
+.stat-num {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-tile.danger .stat-num {
+  color: var(--danger);
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.dash-budget {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.dash-budget.over {
+  color: var(--danger);
+  font-weight: 600;
+  border-color: var(--danger);
+}
+
+.dash-section {
+  margin-bottom: 20px;
+}
+
+.dash-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.dash-section-head h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.see-all {
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dash-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dash-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-item-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dash-amount {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.prio-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.prio-dot.prio-high {
+  background: #ef4444;
+}
+
+.prio-dot.prio-medium {
+  background: #f59e0b;
+}
+
+.prio-dot.prio-low {
+  background: #10b981;
+}
+
+.muted.small {
+  padding: 12px 0;
+  font-size: 0.9rem;
+}
+
+/* ===== Due-date badges ===== */
+.due-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.due-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.due-badge.overdue {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.due-badge.today {
+  background: rgba(245, 158, 11, 0.18);
+  color: #d97706;
+}
+
+.due-badge.soon {
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary);
+}
+
 /* ===== Priority tag ===== */
 .title-wrap {
   display: flex;
