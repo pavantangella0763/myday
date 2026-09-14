@@ -156,3 +156,83 @@ _Add screenshots of the Todos, Expenses, and dark-mode screens here._
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+info for Design prompt
+I want you to redesign my existing application UI to look like a
+premium, professionally designed production-level application.
+
+I will provide reference images and screenshots of my current
+application. Carefully analyze the references and improve my UI
+based on the design principles below.
+
+DESIGN GOAL:
+Create a sophisticated, elegant, modern, and premium user interface.
+The application should look like it was designed by an experienced
+professional product designer, not like a basic beginner project.
+
+1. COLOR PALETTE:
+- Use a subtle, sophisticated, and limited color palette.
+- Choose one primary brand color and build the entire design around it.
+- Use neutral colors for backgrounds, cards, borders, and text.
+- Avoid mixing too many colors.
+- Avoid bright, childish, or highly saturated colors.
+- Avoid unnecessary gradients and excessive visual effects.
+- Maintain excellent contrast and readability.
+- Use colors consistently across every page and component.
+- Use a maximum of one primary brand color, neutral colors, and
+  carefully selected semantic colors for success, warning, and errors.
+
+2. PREMIUM VISUAL STYLE:
+- Use generous whitespace and balanced spacing.
+- Create clean layouts with excellent visual hierarchy.
+- Use subtle borders and soft shadows only where necessary.
+- Use consistent border-radius values.
+- Use elegant typography and carefully selected font sizes.
+- Make cards, buttons, forms, tables, and navigation look polished.
+- Maintain a consistent design language across the entire application.
+- Avoid unnecessary decorative elements.
+
+3. USER EXPERIENCE:
+- Make the application intuitive and easy to navigate.
+- Improve the placement of buttons, forms, menus, and important actions.
+- Ensure the most important information is visually prominent.
+- Make the interface responsive for desktop, tablet, and mobile.
+- Provide clear loading, empty, success, and error states.
+- Make all interactive elements feel consistent and professional.
+
+4. REFERENCE ANALYSIS:
+- Carefully study the reference images I provide.
+- Identify their color palette, typography, spacing, layout,
+  card design, navigation style, and overall visual language.
+- Use the references as inspiration, but do not blindly copy them.
+- Adapt the design to suit my application's purpose and users.
+
+5. IMPLEMENTATION:
+- First inspect my existing project structure and understand the
+  current UI before making changes.
+- Identify the frontend framework and existing components.
+- Preserve all existing business logic, API integrations, routing,
+  authentication, and functionality.
+- Do not break existing features.
+- Improve the UI without unnecessarily rewriting the entire
+  application.
+- Create reusable components and maintainable styling.
+- Use a centralized theme or design system for colors, typography,
+  spacing, and component styles.
+- Ensure the final implementation is clean and production-ready.
+
+IMPORTANT:
+Do not start coding immediately.
+
+First:
+1. Analyze my existing application.
+2. Analyze the reference images.
+3. Recommend a suitable premium color palette.
+4. Explain the design direction and visual hierarchy.
+5. Identify the pages and components that need improvement.
+6. Show me the proposed design approach.
+
+Wait for my approval before implementing the changes.
+
+The final result should feel premium, calm, modern, consistent,
+and professionally designed—not colorful, crowded, or over-designed.
